@@ -1,3 +1,3 @@
 # ALX
 
-### NoSQL
+## NoSQL
