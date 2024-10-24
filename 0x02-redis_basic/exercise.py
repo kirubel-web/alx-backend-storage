@@ -48,6 +48,7 @@ class Cache():
         value = self._redis.get(key)
         return value.decode("utf-8")
 
+
 def count_calls(method: Callable) -> Callable:
     """
     Prototype: def count_calls(method: Caallable) -> Callable:
@@ -106,4 +107,4 @@ def replay(func: Callable):
         fin = '{}(*{}) -> {}'.format(
             key_m, k.decode('utf-8'), v.decode('utf-8'))
         print(fin)
-       return value.decode("utf-8")
+    return value.decode("utf-8")
